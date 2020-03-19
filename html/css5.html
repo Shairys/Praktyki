@@ -1,0 +1,122 @@
+<!DOCRTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Aleksander Czerwionka">
+		<title> css zadanie> </title>
+		<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+		<style>
+			input[required]{
+				color: purple;
+			}
+			[type="text"]{
+				font-size: 30px;
+			}
+			[href*="jastro"]{
+				color: gray;
+			}
+			[id^="produkt"]{
+				color: red;
+			}
+			[id|="test"]{
+				font-size: 50px;
+			}
+			span[data-info~="external"]{
+				color: orange;
+			}
+			span::first-letter{
+				font-size: 200%;
+				text-shadow: -5px -5px 5px blue;
+			}
+			span{
+				display: block;
+			}
+			p:empty{
+				height: 300px;
+				width: 300px;
+				border-radius: 90px 20px;
+				background: rgb(2,0,36);
+				background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(55,55,150,1) 28%, rgba(47,79,166,1) 50%, rgba(189,35,121,1) 66%, rgba(24,146,210,1) 88%, rgba(0,212,255,1) 100%);
+				box-shadow: 3px 5px 3px blue;
+			}
+			:not(#prod){
+				letter-spacing: 20px;
+			}
+			span{
+				font-family: Rubik;
+			}
+			
+			#animation2{
+				width: 50px;
+				height: 50px;
+				background-color: green;
+				transition: 2s ease-in;
+			}
+			#animation2:hover{
+				width: 500px;
+			}
+			#animation{
+				width: 500px;
+				height: 50px;
+				background-color: red;
+			}
+			div[id^="animate"]{
+				width: 75px;
+				height: 25px;
+				background-color: red;
+				margin: 15px;
+				transition: 1s;
+			}
+			
+			#animate1:hover{
+				transform: rotate(45deg);
+			}
+			#animate2:hover{
+				transform: translate(45px, 45px);
+			}
+			#animate3:hover{
+				transform: skew(45deg, 45deg);
+			}
+			#animate4:hover{
+				transform: scale(1.5);
+			}
+			div#animate5{
+				animation: myanimation 1s infinite alternate;
+			}
+			
+			@keyframes myanimation{
+				from{
+					
+				}
+				to{
+					transform: translate(100px, 0px) rotate(45deg);
+				}
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<input type="number" required>
+		<input type="text">
+		<a href="mojastrona.pl">mojastrona.pl </a>
+		<span id="produkt1">produkt1</span>
+		<span id="produkt2">produkt2</span>
+		<span id="produkt3">produkt3</span>
+		<span id="prod">prod</span>
+		<span id="test-dwa-spany">test-dwa-spany</span>
+		<span data-info="kind of external data">external</span>
+		<span>test</span>
+		<p></p>
+		<div id="animation">
+			<div id="animation2"> </div>
+		</div>
+		<div id="animate1"></div>
+		<div id="animate2"></div>
+		<div id="animate3"></div>
+		<div id="animate4"></div>
+		<div id="animate5"></div>
+		
+	</body>
+
+</html>

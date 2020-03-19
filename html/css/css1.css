@@ -1,0 +1,33 @@
+p{
+	color: purple;
+	font-size: 30px;
+}
+
+b.klasa{
+	font-size: 60px;
+	color: gray;
+}
+
+span, div{
+	background-color: purple;
+	color: white;
+}
+
+a{
+		font-size: 30px;
+	
+}
+
+div.menu{
+	background-color: white;
+}
+
+div.menu a:link, div.menu a:visited{
+	color: green;
+	text-decoration: none;
+}
+
+div.menu a:hover, div.menu a:active{
+	font-weight: bold;
+	color: red
+}

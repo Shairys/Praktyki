@@ -1,0 +1,32 @@
+<!DOCRTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Aleksander Czerwionka">
+		<title> css zadanie> </title>
+		<style>
+			div > li, div > span{
+				color: red;
+			}
+			div + span{
+				color: purple;
+			}
+			div ~ span{
+				font-size: 30px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<span>test0</span>
+		<div>
+			<ul>
+				<li>test1</li>
+			</ul>
+			<span>test2</span>
+		</div>
+		<span>test3</span>
+		<span>test4</span>
+	</body>
+
+</html>

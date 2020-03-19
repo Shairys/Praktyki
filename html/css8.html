@@ -1,0 +1,44 @@
+<!DOCRTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Aleksander Czerwionka">
+		<title> flexbox zadanie> </title>
+		<style>
+			#container{
+				height: 300px;
+				width: 100%;
+				border: 1px solid black;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			#container div{
+				width: 300px;
+				min-height: 100px;
+			}
+			#container div:nth-child(1){
+				background-color: red;
+				flex: 1 1 auto;
+			}
+			#container div:nth-child(2){
+				background-color: purple;
+				flex: 2 1 auto;
+			}
+			#container div:nth-child(3){
+				background-color: yellow;
+				flex: 2 1 auto;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<div id="container">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+
+</html>

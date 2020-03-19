@@ -1,0 +1,77 @@
+<!DOCRTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Aleksander Czerwionka">
+		<title> pasek zadanie </title>
+		<style>
+			a{
+				text-decoration: none;
+				display: block;
+				color: white;
+				font-size: 20px;
+			}
+			li{
+				list-style: none;
+				display: block;
+			}
+			#menu > li{
+				float: left;
+			}
+			#menu > li > a{
+				background: rgba(128,128,128, 0.8);
+				padding: 15px;
+			}
+			
+			#menu > li:hover ul li a{
+				opacity: 1;
+			}
+			#menu > li >a:hover{
+				background: rgba(166,166,166,0.8);
+			}
+			#menu > li ul li a:hover{
+				background: rgba(211,211,211,0.8);
+			}
+			
+			#menu li ul li a{
+				
+				background: rgba(128,128,128, 0.8);
+				padding: 10px;
+				opacity: 0;
+				transition: 0.3s;
+			}
+			#menu > li:first-child > a{
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			#menu > li:last-child > a{
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			<ul id="menu">
+				<li><a href="#">Strona główna</a></li>
+				<li><a href="#">Pierwsza podstrona</a></li>
+				<li><a href="#">Druga podstrona</a>
+					<ul>
+						<li><a href="#">Pierwsza podstrona</a></li>
+						<li><a href="#">Druga podstrona</a></li>
+						<li><a href="#">Trzecia podstrona</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Trzecia podstrona</a>
+					<ul>
+						<li><a href="#">Pierwsza podstrona</a></li>
+						<li><a href="#">Druga podstrona</a></li>
+						<li><a href="#">Trzecia podstrona</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

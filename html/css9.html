@@ -1,0 +1,71 @@
+<!DOCRTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Aleksander Czerwionka">
+		<title> flexbox2 zadanie> </title>
+		<style>
+			body{
+				font-size: 50px;
+				color: white;
+			}
+			#container{
+				border: 1px solid black;
+			}
+			#container > *:not(#middle), #middle > *{
+				min-height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#header{
+				height: 200px;
+				background-color: green;
+			}
+			#middle{
+				display: flex;
+			}
+			#nav{
+				flex: 1;
+				background-color: red;
+			}
+			#content{
+				flex: 7;
+				background-color: yellow;
+				align-items: center;
+				justify-content: center;
+			}
+			#aside{
+				flex: 1;
+				background-color: blue;
+			}
+			#footer{
+				height: 200px;
+				background-color: purple;
+			}
+			
+			@media print{
+				#footer, #aside, #nav, #header{
+					display: none !important;
+				}
+			
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="header">header</div>
+			<div id="middle">
+				<div id="nav">nav</div>
+				<div id="content">content</div>
+				<div id="aside">
+					aside<br>
+					aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>aside<br>
+				</div>
+			</div>
+			<div id="footer">footer</div>
+		</div>
+	</body>
+
+</html>

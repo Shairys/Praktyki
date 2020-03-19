@@ -1,0 +1,43 @@
+<!DOCRTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Aleksander Czerwionka">
+		<title> formularze zadanie> </title>
+		
+	</head>
+	
+	<body>
+		<form action="" method="post">
+			Imię:<input type="text" readonly="readonly" value="Aleksander"><br>
+			Nazwisko:<input type="text" disabled="true"><br>
+			Hasło:<input type="password"><br>
+			<fieldset>
+				<legend>Wybierz swój test </legend>
+				<input type="checkbox" name="checkboxname" id="1" value="1"> <label for="1"> test1. </label> <br>
+				<input type="checkbox" name="checkboxname" id="2" value="2"> <label for="2"> test2. </label> <br>
+				<input type="checkbox" name="checkboxname" id="3" value="3"> <label for="3"> test3. </label> <br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Wybierz swoją liczbę </legend>
+				<input type="radio" name="radioname" id="4"> <label for="4"> 4. </label> <br>
+				<input type="radio" name="radioname" id="5"> <label for="5"> 5. </label> <br>
+				<input type="radio" name="radioname" id="6"> <label for="6"> 6. </label> <br>
+			</fieldset>
+			<br>
+			<select name="litery" multiple="multiple">
+				<option>A</option>
+				<option>B</option>
+				<option>C</option>
+			</select>
+			<br>
+			<textarea cols="20" rows="20">
+				
+			</textarea>
+			<br>
+			<input type="submit" value="wyślij">
+		</form>
+	</body>
+
+</html>
