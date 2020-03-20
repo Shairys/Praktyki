@@ -137,6 +137,7 @@ function stopwatch(display){
     this.workTimer = function(){ //Funkcja która jest wywoływana w interwale
         this.currTime--;
         if(this.currTime < 0){
+            this.currTime = 0;
             this.stopTimer(); //usuwa interwał
             return;
         }
